@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Brazilian Food</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: #2aa757;
+        font-size: 60;
+      }
+
+      hr {
+        border: 0;
+        border-top: 1px solid #142838;
+      }
+      h2 {
+        text-align: center;
+        color: #142838;
+        font-size: 42;
+      }
+
+      img {
+        display: block;
+        margin: auto;
+        max-width: 100%;
+        padding: 20px;
+        border-radius: 30px;
+      }
+
+      p {
+        line-height: 1.5;
+        font-size: 14px;
+        margin: 20px 0 10px;
+        text-align: center;
+        margin: 0 auto;
+        padding: 10px 15px 20px 10px;
+      }
+
+      .find-out-more {
+        display: block;
+        margin: 0 auto;
+        text-decoration: none;
+        color: #5f76a6;
+        font-size: 11px;
+        text-align: center;
+      }
+
+      .find-out-more:hover {
+        text-decoration: underline;
+      }
+
+      h3 {
+        text-align: center;
+        color: #142838;
+        line-height: 2;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        border-radius: 15px;
+        font-size: 20px;
+        color: white;
+        background-color: #2aa757;
+        padding: 20px 35px;
+        border: none;
+        box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.5);
+        transition: all 180ms ease-in-out;
+      }
+      button:hover {
+        opacity: 1.9;
+        cursor: pointer;
+        background-color: #5f76a6;
+      }
+
+      body {
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+          Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+          "Segoe UI Symbol" !important;
+      }
+      .footer {
+        display: block;
+        text-decoration: none;
+        color: #5f76a6;
+        text-align: center;
+        padding: 20px 15px 20px 20px;
+      }
+
+      .footer:hover {
+        text-decoration: underline;
+      }
+      .container {
+        max-width: 660px;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Brazilian Food is awesome</h1>
+
+      <hr />
+
+      <h2>Savor the taste of Brazil, even in France</h2>
+
+      <hr />
+
+      <img
+        src="https://cdn.deliway.com.br/blog/base/1d9/410/8e9/comidas-tipicas-brasil.jpg"
+        alt="Brazilian Food"
+        width="620"
+      />
+      <p>
+        Brazilian cuisine is the set of cooking practices and traditions of
+        Brazil, and is characterized by European, Amerindian, African, and Asian
+        (Levantine, Japanese, and most recently, Chinese) influences. It varies
+        greatly by region, reflecting the country's mix of native and immigrant
+        populations, and its continental size as well.
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Brazilian_cuisine"
+        target="_blank"
+        class="find-out-more"
+      >
+        <strong>Find out more</strong>
+      </a>
+      <br />
+
+      <hr />
+
+      <h2><em>Caipirinha</em>, the famous Brazilian cocktail!</h2>
+
+      <hr />
+
+      <img
+        src="https://cdn.pixabay.com/photo/2024/06/13/21/51/caipirinha-8828580_1280.png"
+        alt="Caipirinha"
+        width="620"
+      />
+      <p>
+        Caipirinha is a Brazilian cocktail, of São Paulo origin, with cachaça
+        (sugarcane hard liquor), sugar, lime, and ice. The drink is prepared by
+        mixing the fruit and the sugar together, then adding the liquor.
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Caipirinha"
+        target="_blank"
+        class="find-out-more"
+      >
+        <strong>Find out more</strong>
+      </a>
+      <br />
+
+      <hr />
+      <h3>Do you live in France, but want to try Brazilian food? &#128523;</h3>
+
+      <button class="make-reservation">Make your reservation now</button>
+
+      <a
+        href="https://www.linkedin.com/in/aline-horn/"
+        target="_blank"
+        class="footer"
+      >
+        Coded by Aline Horn
+      </a>
+    </div>
+    <script>
+      function reservation() {
+        let name = prompt("What is your name?");
+        let city = prompt("Where do you live in France?");
+        let date = prompt(
+          "What day and time do you want to make the reservation?"
+        );
+
+        let h1 = document.querySelector("h1");
+        h1.innerHTML =
+          "Thank you," + " " + name + "! It is done. Enjoy your experience!";
+      }
+
+      let reservationbutton = document.querySelector(".make-reservation");
+      reservationbutton.addEventListener("click", reservation);
+    </script>
+  </body>
+</html>
